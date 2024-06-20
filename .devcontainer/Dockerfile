@@ -107,4 +107,3 @@ EXPOSE 80
 # Check that the homepage is displayed
 HEALTHCHECK --interval=5m --timeout=5s \
   CMD curl -f http://localhost/ || exit 1
-s

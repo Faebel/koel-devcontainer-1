@@ -1,7 +1,7 @@
 version: '3.8'
 
 services: 
-  app:
+  koel:
     build:
       context: .
       dockerfile: Dockerfile
@@ -18,7 +18,7 @@ services:
       - DB_DATABASE=koel
       - DB_USERNAME=koel
       - DB_PASSWORD=koel
-      - 
+
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
 
@@ -57,10 +57,6 @@ services:
 
 volumes:
   mariadb-data:
-
   music:
-    driver: local
   covers:
-    driver: local
   search_index:
-    driver: local

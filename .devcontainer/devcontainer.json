@@ -3,7 +3,7 @@
 {
 	"name": "koel",
 	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
+	"service": "koel",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
