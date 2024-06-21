@@ -90,7 +90,7 @@ ENV FFMPEG_PATH=/usr/bin/ffmpeg \
     LC_ALL=en_US.UTF-8
 
 # Copy entrypoint script and set entrypoint
-COPY koel-entrypoint /usr/local/bin/
+COPY ./koel-entrypoint /usr/local/bin/
 RUN chmod +x /usr/local/bin/koel-entrypoint
 ENTRYPOINT ["koel-entrypoint"]
 CMD ["apache2-foreground"]
