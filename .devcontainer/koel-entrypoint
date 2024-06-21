@@ -10,5 +10,5 @@ echo "running docker-php-entrypoint with arguments $@"
 docker-php-entrypoint $@
 
 # Run Laravel migrations
- php artisan migrate --force
+# php artisan migrate --force
 # php artisan db:seed
